@@ -3,9 +3,9 @@
 var React = require('react');
 
 import PropTypes from 'prop-types';
+var createReactClass = require('create-react-class');
 
-
-var Cassette = React.createClass({
+var Cassette = createReactClass({
 
   propTypes: {
     src: PropTypes.string.isRequired,

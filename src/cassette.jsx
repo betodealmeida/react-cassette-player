@@ -2,19 +2,21 @@
 
 var React = require('react');
 
+import PropTypes from 'prop-types';
+
 
 var Cassette = React.createClass({
 
   propTypes: {
-    src: React.PropTypes.string.isRequired,
-    preload: React.PropTypes.string,
-    mimeType: React.PropTypes.string,
-    labelColor: React.PropTypes.string,
-    tapeColor: React.PropTypes.string,
-    cassetteColor: React.PropTypes.string,
-    controlsColor: React.PropTypes.string,
-    containerClass: React.PropTypes.string,
-    scaleMethod: React.PropTypes.string
+    src: PropTypes.string.isRequired,
+    preload: PropTypes.string,
+    mimeType: PropTypes.string,
+    labelColor: PropTypes.string,
+    tapeColor: PropTypes.string,
+    cassetteColor: PropTypes.string,
+    controlsColor: PropTypes.string,
+    containerClass: PropTypes.string,
+    scaleMethod: PropTypes.string
   },
 
   getDefaultProps: function() {
